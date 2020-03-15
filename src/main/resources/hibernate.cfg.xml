@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+    <session-factory>
+        <property name="connection.url">jdbc:postgresql://ec2-34-235-108-68.compute-1.amazonaws.com:5432/d58tibgkbs2huh</property>
+        <property name="connection.driver_class">org.postgresql.Driver</property>
+        <property name="connection.username">ngbskcmenvejch</property>
+        <property name="connection.password">5d348032dbd242b836319bcc892f1a11353bb46e9f81e355abca61671a9093ce</property>
+        <property name="show_sql">true</property>
+        <property name="hbm2ddl.auto">create</property>
+
+        <mapping class="project.entity.Income"/>
+        <mapping class="project.entity.Indicator"/>
+        <mapping class="project.entity.Price"/>
+        <mapping class="project.entity.Spending"/>
+    </session-factory>
+
+</hibernate-configuration>
