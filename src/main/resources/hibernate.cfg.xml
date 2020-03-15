@@ -6,10 +6,10 @@
 <hibernate-configuration>
 
     <session-factory>
-        <property name="connection.url">jdbc:postgresql://ec2-34-235-108-68.compute-1.amazonaws.com:5432/d58tibgkbs2huh</property>
+        <property name="connection.url">jdbc:postgresql://ec2-3-91-112-166.compute-1.amazonaws.com:5432/dau5ktcgs5666r</property>
         <property name="connection.driver_class">org.postgresql.Driver</property>
-        <property name="connection.username">ngbskcmenvejch</property>
-        <property name="connection.password">5d348032dbd242b836319bcc892f1a11353bb46e9f81e355abca61671a9093ce</property>
+        <property name="connection.username">rhwklwwdzvazec</property>
+        <property name="connection.password">8bccf4c6be55ffa18fb862c05688b6d8f49d95dbd1e3daa96ca1501b10fa8f9b</property>
         <property name="show_sql">true</property>
         <property name="hbm2ddl.auto">create</property>
 
