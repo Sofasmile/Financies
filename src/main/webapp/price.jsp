@@ -19,14 +19,17 @@
 <h1>Hello everyone!</h1>
 <div class="wrapper">
     <div class="box">
+        <p style="background-color:Tomato;"><strong>${message1} </strong></p>
         <jsp:include page="income.jsp"/>
     </div>
     <div class="box">
+        <p style="background-color:Tomato;"><strong> ${message2} </strong></p>
         <jsp:include page="spending.jsp"/>
     </div>
 </div>
 <div align="center">
     <h2>Calculate NVP</h2>
+    <p style="background-color:Tomato;"><strong> ${message3} </strong></p>
     <form action="${pageContext.request.contextPath}/price" method="post">
         <label>Write discount rate:</label>
         <input value="${discountRate}" name="discountRate"/>

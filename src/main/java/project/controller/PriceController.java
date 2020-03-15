@@ -37,9 +37,19 @@ public class PriceController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws IOException, ServletException {
-        Double nvp = priceService.countNvp(Integer.valueOf(request.getParameter("discountRate")));
         List<Income> incomes = incomeService.getAll();
         List<Spending> spendings = spendingService.getAll();
+        Integer discountRate = null;
+        try {
+            discountRate = Integer.valueOf(request.getParameter("discountRate"));
+        } catch (NumberFormatException e){
+            request.setAttribute("message3", "Discount rate should be number!");
+            request.setAttribute("incomes", incomes);
+            request.setAttribute("spending", spendings);
+            request.getRequestDispatcher("/price.jsp").forward(request, response);
+            return;
+        }
+        Double nvp = priceService.countNvp(discountRate);
         request.setAttribute("message", nvp);
         request.setAttribute("incomes", incomes);
         request.setAttribute("spending", spendings);

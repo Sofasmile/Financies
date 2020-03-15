@@ -14,7 +14,6 @@
         <property name="hbm2ddl.auto">create</property>
 
         <mapping class="project.entity.Income"/>
-        <mapping class="project.entity.Indicator"/>
         <mapping class="project.entity.Price"/>
         <mapping class="project.entity.Spending"/>
     </session-factory>
